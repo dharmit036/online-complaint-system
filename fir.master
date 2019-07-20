@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="fir.master.cs" Inherits="fir" %>
+
+<!DOCTYPE HTML>
+<html>
+
+<head runat="server">
+  <title>Fir form</title>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+    <style type="text/css">
+        #TextArea1 {
+            height: 54px;
+            width: 176px;
+        }
+        r{
+		  color:#f31d1d;
+
+        }
+    </style>
+</head>
+
+<body style="font-size: small; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: normal; font-style: small; font-variant: small-caps; text-transform: none; color: #000000">
+    <form id="form2" runat="server">
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">FIR<span class="logo_colour"> form</span></a></h1>
+          <!--<h2>Simple. Contemporary. Website Template.</h2>-->
+        </div>
+      </div>
+    </div>
+    </div>
+        <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="containt.aspx">Home</a></li>
+          <li><a href="examples.html">Gallery</a></li>
+          <li class="selected"><a href="firpage.aspx">FIR form</a></li>
+          <li><a href="another_page.html">People Desk</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+       <ul>
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+        </ul>
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+        </div>
+        <div id="content">
+            <form method="post" action="#" id="fir_form">
+               <fieldset>
+                <legend>Personal Details </legend><br>
+                Firstname<r>*</r>:<input type="text" name="firstname" required /><br><br>
+                Middlename<r>*</r>:<input type="text" name="middlename" required /><br><br>
+                Lastname<r>*</r>:<input type="text" name="lastname" required /><br><br>
+                E-mail<r>*</r>:<input type="text" name="email" required /><br><br>
+                Mobile no<r>*</r>:<input type="text" name="mobileno" required /><br><br>
+                Address<r>*</r>:<br />
+&nbsp;<textarea id="TextArea1" name="S1"></textarea><br />
+                <br />
+                City<r>*</r>:<input type="text" name="city" required /><br><br>
+                Pincode/Postalcode<r>*</r>:<input type="text" name="pincode" required /><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend> Crime Details</legend><br>
+                    Complaint type:
+                    <select>
+                        <option>--None--</option>
+                        <option>Robbery</option>
+                        <option>Murder</option>
+                        <option>Missing People</option>
+                        <option>Harrasment</option>
+                        <option>Other Type</option>
+                    </select><br><br>
+                    Complaint Type(If Other)<r>*</r>:<input type="text" name="complainttype"><br><br>
+                    Crime in detail<r>*</r>:<br>
+<textarea rows="15" cols="45" name="crimeindetail"></textarea><br>
+                </fieldset>
+                <input type="submit" value="Submit"></input> &nbsp &nbsp &nbsp
+                <input type="reset" value="Reset"></input>
+            </form>
+                
+        </div>
+        <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+</body>
+</html>
+

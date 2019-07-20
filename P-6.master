@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="P-6.master.cs" Inherits="P_6" %>
+
+<!DOCTYPE HTML>
+<html>
+<head runat="server">
+  <title>DiGiTaL PoLiCe</title>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small; font-style: normal; font-variant: normal; text-transform: capitalize">
+    <form id="form2" runat="server">
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="containt.aspx">Digital<span class="logo_colour"> Police</span></a></h1>
+          <h2>Simple. Contemporary. Website Template.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="containt.aspx">Home</a></li>
+          <li><a href="signin.aspx">Sign IN</a></li>
+          <li><a href="firpage1.aspx">FIR form</a></li>
+          <li><a href="peopledesk.aspx">People Desk</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Digital Police</h1>
+        <p>This portal is a platform for Citizens to file crime related complaints online and seek antecedent verification of prospective employees (including for domestic help, drivers etc.), tenants or for any other purpose. Citizens can also seek certification of their own antecedents.
+The portal would also provide access to authorized persons to use National Database of crime records for the purpose of investigation, policy making, data analytics, research and providing citizen services.
+The portal consolidates data of current and past Crime occurrences across the country. This data has information pertaining to persons accused or convicted in criminal cases along with associated information such as property stolen/recovered, missing persons, recovered/unidentified dead bodies and so on. This information would help expedite Police investigations to solve crime as well as to provide antecedent verification services to citizens.
+The portal also generates various thematic reports of trends of incidence of crime across the country to facilitate policy analysis and interventions. To illustrate, reports such as those pertaining to crime against women & children, societal trends of crimes, patterns of crime involving groups belonging to a particular age or educational qualification and so on, crimes which are more prevalent in certain areas, can be generated from data in this portal.
+To protect privacy of individuals concerned and for National security reasons the Crime and Criminal data and reports can be searched by authorized Police officers only. Citizens who seek criminal antecedent verification services will be provided responses through email.
+The DIGITAL POLICE portal is a SMART Policing initiative of Ministry of Home Affairs as enunciated by Hon’ble Prime Minister, to provide services to citizens and aid efficient Police investigations.</p>
+      
+      </div>
+    </div>
+   
+      <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+          </div>
+  </div>
+        </form>
+</body>
+</html>
+
